@@ -1,33 +1,26 @@
-n=int(input())
+
+n=int(input('enter number:'))
 for i in range(1,n+1):
-    for k in range(n-i,0,-1):
-        print(" ",end=" ")
     for j in range(1,i+1):
-        print('*',end="   ")
-    print('\n')
+        print(j,end=" ")
+    print("\n")
 for i in range(1,n+1):
-    for k in range(0,i):
-        print(" ",end=" ")
-    for j in range(n-i+1,1,-1):
-        print('*',end="   ")
+    for j in range(1,n-i+1):
+        print(j,end=" ")
     print('\n')
 
-   OUTPUT:
-   5
-        *   
+    OUTPUT:
+    enter number:4
+1 
 
-      *   *   
+1 2 
 
-    *   *   *   
+1 2 3 
 
-  *   *   *   *   
+1 2 3 4 
 
-*   *   *   *   *   
+1 2 3 
 
-  *   *   *   *   
+1 2 
 
-    *   *   *   
-
-      *   *   
-
-        *
+1
