@@ -1,0 +1,7 @@
+n=int(input())
+l=[]
+for i in range(n):
+    j=int(input())
+    l.append(j)
+for i in range(n-1,-1,-1):
+    print(l[i])
